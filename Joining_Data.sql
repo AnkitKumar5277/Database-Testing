@@ -18,7 +18,7 @@ CREATE TABLE Album (
     album_id INT PRIMARY KEY,
     title VARCHAR(255),
     artist_id INT
-);
+); 
 INSERT INTO Album (album_id, title, artist_id) VALUES
 (1, 'For those who rock', 1),
 (2, 'Dream on', 2),
