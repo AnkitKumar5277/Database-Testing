@@ -29,13 +29,13 @@ INSERT INTO Album (album_id, title, artist_id) VALUES
 select * from album;
 select * from artist;
 
--- INNER JOINS
+-- INNER JOINS (include duplicate rows)
 select *
 from artist as art
 inner join album as alb
 on art.artist_id = alb.artist_id;
 
--- INNER JOIN with USING
+-- INNER JOIN with USING (exclude duplicate rows)
 select * 
 from artist as art
 inner join album as alb
