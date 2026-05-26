@@ -100,12 +100,10 @@ union all
 select artist_id
 from album;
 
--- INTERSECT
--- select artist_id
--- from artist
--- intersect
--- select artist_id
--- from album;
+-- INTERSECT return common rows (excluding duplicates
+select artist_id from artist
+intersect
+select artist_id from album;
 
 -- MySQL does not support the INTERSECT operator directly. However, 
 -- you can achieve the same result using INNER JOIN or DISTINCT with IN.
