@@ -107,21 +107,15 @@ select artist_id from album;
 
 -- MySQL does not support the INTERSECT operator directly. However, 
 -- you can achieve the same result using INNER JOIN or DISTINCT with IN.
-
 SELECT distinct artist.artist_id
 from artist
 inner join album
 on artist.artist_id = album.artist_id;
 
--- EXCEPT
--- SELECT artist_id
--- from artist
--- except
--- select artist_id
--- from album;
-
--- MySQL does not support the EXCEPT operator directly. However,
--- you can achieve the same result using LEFT JOIN with WHERE ... IS NULL or NOT IN.
+-- except (return unique data from B) not support mysql but use left join with where ... IS NULL or NOT IN.
+SELECT artist_id from artist
+except
+select artist_id from album;
 
 select artist.artist_id
 from artist
