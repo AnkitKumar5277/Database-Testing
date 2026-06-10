@@ -160,4 +160,4 @@ group by country;
 select year_listed
 from airbnb_listings
 group by year_listed
-having count(id) > 100;
+having count(id) > 100; 
