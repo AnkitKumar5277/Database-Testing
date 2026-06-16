@@ -66,7 +66,7 @@ select make, model, time_to_60_mph_s
 from cars
 where time_to_60_mph_s <= 2.1;
 
-select make, model time_to_60_mph_s
+select make, model, time_to_60_mph_s
 from cars
 where time_to_60_mph_s = 2.1;
 
@@ -161,8 +161,10 @@ select *
 from cars
 limit 2 offset 3;
 
+-- concatanate
 select make || ' ' || model AS make_and_model
 from cars;
+
 
 select now(), current_date, current_time;
 
