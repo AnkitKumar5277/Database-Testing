@@ -1,3 +1,4 @@
+
 create database franchises;
 use franchises;
 
